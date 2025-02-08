@@ -25,6 +25,7 @@ export const registerUser =async(req,res)=>{
         email: user.email,
         role: user.role,
       },
+      ////////
     });
   } catch (error) {
     res.status(500).json({ message: "Server error", error: error.message });
